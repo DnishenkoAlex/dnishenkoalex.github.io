@@ -1,0 +1,340 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    z-index: 2;
+}
+
+header {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 42px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link {
+    height: 14px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding: 0 28px;
+    /* padding-right: 28px; поменял что бы выровнять разделители*/
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    /* position: relative;
+    z-index: 2; */
+    background-color: rgba(0,0,0, .6);
+    height: 84px;
+}
+
+.subheader .subheader_logo {
+    display: block;
+    text-align: left;
+    max-width: 100%;
+    padding-top: 16px; 
+}
+
+
+.subheader .subheader_official {
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 6px;
+    
+}
+
+.subheader .subheader_call {
+    margin-top: 19px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.subheader a {
+    display: block;
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 68px; */
+    text-transform: uppercase;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #64aac5 0%, #8ce2fe 100%);
+    opacity: 1;
+}
+
+.promo {
+    /* transform: translateY(-84px);
+    z-index: 1; */
+    padding: 150px 0 135px 0;
+    text-align: center;
+    min-height: 800px;
+    background: url(../img/header_background.png) center center/cover no-repeat;
+}
+
+.promo .promo_header {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0%;
+}
+
+.promo .promo_subheader {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+} 
+
+.promo .promo_btn {
+    width: 259px;
+    height: 63px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #64aac5 0%, #8ce2fe 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 118px;
+}
+
+.advantages {
+    height: 900px;
+    padding-bottom: 65px;
+}
+
+.advantages .advantages_lable {
+    margin: 0 auto;
+    margin-top: 71px;
+    border: none;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+
+.advantages_header {
+    color: #272727;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 44px;
+}
+
+.advantages_img {
+    float: left;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 50px;
+}
+
+.advantages .advantages_text {
+    /* padding: 0; */
+    text-align: left;
+    margin: 40px 0 0 174px;
+    font-weight: 300;
+    color: #252525;
+    font-size: 15px;
+    line-height: 21px;
+}
+.advantages_text_blue {
+    color: #64aac5;
+    font-size: 17px;
+    font-weight: 400;    
+}
+
+.mobile_app {
+    height: 864px;
+    padding-top: 48px;
+    /* margin: 48px; */
+    text-align: center;
+    background: url(../icons/mobile/mobile_background.png) center center/cover no-repeat;
+}
+
+
+.mobile_app .mobile_app_lable {
+    margin: 0 auto;
+    margin-top: 48px;
+    border: none;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 100;;
+    text-transform: uppercase;
+    /* text-align: center; */
+    padding-top: 5px;
+}
+
+.mobile_app .mobile_app_header {
+    color: #272727;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+
+.mobile_app .mobile_app_text {
+    color: #272727;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 19px;
+}
+
+.mobile_app .row  {
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.mobile_app .mobile_app_mobile1 {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    background: url(../icons/mobile/mobile_1.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.mobile_app .mobile_app_mobile2 {
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    background: url(../icons/mobile/mobile_2.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.mobile_app .mobile_app_mobile3 {
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    background: url(../icons/mobile/mobile_3.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.mobile_app .mobile_app_mobile4 {
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    background: url(../icons/mobile/mobile_4.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.mobile_app .mobile_app_mobile5 {
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    background: url(../icons/mobile/mobile_5.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.mobile_app .mobile_app_mobile6 {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    opacity: 0.9;
+    background: url(../icons/mobile/mobile_6.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.mobile_app .mobile_app_mobile_plus {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 35px;
+    left: 160px;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    /* background-color: #000000; */
+    background: url(../icons/mobile/mobile+.png) center center/cover no-repeat;
+}
